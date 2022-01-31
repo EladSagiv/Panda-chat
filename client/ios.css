@@ -1,0 +1,395 @@
+
+body {
+  background-color: mintcream;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+main {
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+section {
+  
+  height: 300px;
+  overflow: scroll;
+  padding: 25px 25px 0 25px;
+}
+
+section br {
+  clear: both;
+}
+
+.message {
+  max-width: 250px;
+  word-wrap: break-word;
+  margin-bottom: 12px;
+  line-height: 24px;
+}
+section p:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+p {
+  margin: 0px;
+}
+
+p:nth-of-type(odd) {
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  background: #0b93f6;
+  border-radius: 25px;
+  float: right;
+}
+
+p:nth-of-type(odd):before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: -2px;
+  right: -7px;
+  height: 20px;
+  border-right: 20px solid #0b93f6;
+  border-bottom-left-radius: 16px 14px;
+  -webkit-transform: translate(0, -2px);
+}
+
+p:nth-of-type(odd):after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  bottom: -2px;
+  right: -56px;
+  width: 26px;
+  height: 20px;
+  background: white;
+  border-bottom-left-radius: 10px;
+  -webkit-transform: translate(-30px, -2px);
+}
+
+p:nth-of-type(even) {
+  position: relative;
+  padding: 10px 20px;
+  background: #e5e5ea;
+  border-radius: 25px;
+  color: black;
+  float: left;
+}
+
+p:nth-of-type(even):before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  bottom: -2px;
+  left: -7px;
+  height: 20px;
+  border-left: 20px solid #e5e5ea;
+  border-bottom-right-radius: 16px 14px;
+  -webkit-transform: translate(0, -2px);
+}
+
+p:nth-of-type(even):after {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  bottom: -2px;
+  left: 4px;
+  width: 26px;
+  height: 20px;
+  background: white;
+  border-bottom-right-radius: 10px;
+  -webkit-transform: translate(-30px, -2px);
+}
+
+form {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+form div:first-child {
+  flex: 1;
+  padding: 5px;
+  margin: 5px;
+}
+
+form div:nth-child(2) {
+  display: flex;
+  margin: 5px;
+}
+
+button {
+  border: none;
+  color: #0a93f6;
+  background-color: transparent;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  border: solid 1px #e5e5eb;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+:root {
+  --black: #131416;
+  --gray: #333642;
+}
+
+
+
+
+.box-canvas{
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 20vmin;
+  margin-bottom: 20vmin;
+  width: 60vmin;
+  height:60vmin;
+}
+
+.ear {
+  position: absolute;
+  width: 8vmin;
+  height: 8vmin;
+  background: var(--gray);
+  border-radius: 50%;
+  border: 3vmin solid var(--black);
+  top: 2vmin;
+}
+
+.ear.left {
+  left: 12vmin;
+}
+
+.ear.right {
+  right: 12vmin;
+}
+
+.head {
+  position: absolute;
+  top: 5vmin;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30vmin;
+  height: 25vmin;
+  background: white;
+  border-radius: 50% 50% 40% 40%;
+}
+
+.nose {
+  position: absolute;
+  height: 3vmin;
+  width: 5vmin;
+  border-radius: 50%;
+  background: var(--black);
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15vmin;
+}
+
+.nose::before {
+  content: '';
+  position: absolute;
+  width: 1.5vmin;
+  height: 0.75vmin;
+  border-radius: 50%;
+  background: white;
+  top: 0.5vmin;
+  right: 1vmin;
+  transform: rotate(10deg);
+}
+
+.mouth {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--black);
+  width: 13vmin;
+  height: 5vmin;
+  bottom: 0.5vmin;
+  clip-path: circle(50% at 50% 0);
+}
+
+.mouth::before {
+  content: '';
+  position: absolute;
+  width: 7vmin;
+  height: 5vmin;
+  border-radius: 50%;
+  background: red;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -3vmin;
+}
+
+.arm {
+  position: absolute;
+  width: 20vmin;
+  height: 10vmin;
+  background: var(--black);
+  border-radius: 20% / 50%;
+  top: 27vmin;
+}
+
+.arm.left {
+  left: 2vmin;
+  transform: rotate(-25deg);
+}
+
+.arm.right {
+  right: 2vmin;
+  transform: rotate(25deg);
+}
+
+.patch {
+  position: absolute;
+  top: 5vmin;
+  width: 11vmin;
+  height: 13vmin;
+  background: black;
+  border-radius: 50% 50% 70% 30% / 29% 27% 73% 71%;
+}
+
+.patch.left {
+  left: 3vmin;
+  transform: rotate(10deg);
+}
+
+.patch.right {
+  right: 3vmin;
+  transform: rotateY(180deg) rotate(10deg);
+}
+
+.eye {
+  position: absolute;
+  top: 8vmin;
+  width: 4vmin;
+  height: 4vmin;
+  background: black;
+  border: 1vmin solid white;
+  border-radius: 50%;
+}
+
+.eye::before {
+  content: '';
+  position: absolute;
+  width: 2vmin;
+  height: 2vmin;
+  border-radius: 50%;
+  background: white;
+}
+
+.eye::after {
+  content: '';
+  position: absolute;
+  width: 1vmin;
+  height: 1vmin;
+  background: white;
+  border-radius: 50%;
+  bottom: 0.5vmin;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.eye.left {
+  left: 6vmin;
+}
+
+.eye.right {
+  right: 6vmin;
+}
+
+.body {
+  position: absolute;
+  bottom: 2vmin;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35vmin;
+  height: 35vmin;
+  background: var(--black);
+  border-radius: 40%;
+  overflow: hidden;
+}
+
+.body::before {
+  content: '';
+  position: absolute;
+  height: 35vmin;
+  width: 35vmin;
+  background: white;
+  border-radius: 50%;
+  bottom: -10vmin;
+}
+
+.leg {
+  position: absolute;
+  width: 18vmin;
+  height: 18vmin;
+  background: var(--black);
+  border-radius: 50%;
+  bottom: 0;
+}
+
+.leg.left {
+  left: 8vmin;
+}
+.leg.right {
+  right: 8vmin;
+}
+
+.pad {
+  width: 9vmin;
+  height: 9vmin;
+  position: absolute;
+  background: var(--gray);
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2vmin;
+}
+
+.toe {
+  position: absolute;
+  width: 4vmin;
+  height: 4vmin;
+  background: var(--gray);
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2vmin;
+}
+
+.toe::before {
+  content: '';
+  position: absolute;
+  width: 4vmin;
+  height: 4vmin;
+  background: var(--gray);
+  border-radius: 50%;
+  left: -5vmin;
+  top: 2vmin;
+}
+
+.toe::after {
+  content: '';
+  position: absolute;
+  width: 4vmin;
+  height: 4vmin;
+  background: var(--gray);
+  border-radius: 50%;
+  right: -5vmin;
+  top: 2vmin;
+}
+
