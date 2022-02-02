@@ -13,5 +13,14 @@
   "dependencies": {
     "express": "^4.16.3",
     "socket.io": "^2.1.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EladSagiv/panda-chat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EladSagiv/panda-chat/issues"
+  },
+  "homepage": "https://github.com/EladSagiv/panda-chat#readme"
 }
