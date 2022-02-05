@@ -4,15 +4,15 @@
 Chat application using Node.js and heroku 
 
 # Installation
-You need to have VS Code installed in order to run this app locally
-step 1:
-clone the repository
-step 2:
-Go to the project root using terminal 
-step 3: 
-run in terminal ```npm init``` 
-step 4: 
-run in terminal ```node index.js```
+<br>You need to have VS Code installed in order to run this app locally</br>
+<br>step 1:</br>
+<br>clone the repository</br>
+<br>step 2:</br>
+<br>Go to the project root using terminal </br>
+<br>step 3: </br>
+<br>run in terminal ```npm init``` </br>
+<br>step 4: </br>
+<br>run in terminal ```node index.js```</br>
 
 # Usage 
 
