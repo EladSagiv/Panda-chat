@@ -1,5 +1,5 @@
 # chat-panda 
-# Welcome to panda-chat :wave::sunglasses:
+# Welcome to panda-chat :wave:🐼
 
 Chat application using Node.js and heroku 
 
