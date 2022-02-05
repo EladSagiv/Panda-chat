@@ -7,13 +7,13 @@ Chat application using Node.js and heroku
 # Installation
 
 <br>**step 1:**</br>
-<br>clone the repository</br>
+<br>Clone the repository</br>
 <br>**step 2:**</br>
 <br>Go to the project root using terminal </br>
 <br>**step 3:**</br>
-<br>run in terminal ```npm init``` </br>
+<br>Run in terminal ```npm init``` </br>
 <br>**step 4:**</br>
-<br>run in terminal ```node index.js```</br>
+<br>Run in terminal ```node index.js```</br>
 
 **Link to app in heroku** https://panda-chat1.herokuapp.com/index.html
 # Usage 
